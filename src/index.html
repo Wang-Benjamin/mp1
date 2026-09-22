@@ -1,13 +1,341 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta
+            name="description"
+            content="Yakun Wang — Master of Computer Science student at UIUC, software developer, and machine learning engineer."
+        >
+        <title>Yakun Wang | Portfolio</title>
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+
+        <header class="site-header" data-header>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a class="nav-brand" href="#home" aria-label="Yakun Wang, back to home">
+                    <span>Yakun Wang</span>
+                    <span class="nav-brand__trace" aria-hidden="true"></span>
+                </a>
+
+                <div class="nav-links">
+                    <a class="nav-link is-active" href="#home" aria-current="page">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#video">Video</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section class="hero stripe" id="home" aria-labelledby="home-title">
+                <div class="hero__trace hero__trace--left" aria-hidden="true"></div>
+                <div class="hero__trace hero__trace--right" aria-hidden="true"></div>
+                <div class="hero__content">
+                    <h1 id="home-title">Yakun Wang</h1>
+                    <p>Master of Computer Science at UIUC</p>
+                    <a class="scroll-cue" href="#about" aria-label="Scroll to the About section">
+                        <svg viewBox="0 0 32 48" aria-hidden="true">
+                            <path d="M16 4v34M7 29l9 9 9-9"></path>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <section class="about stripe" id="about" aria-labelledby="about-title">
+                <div class="section-shell">
+                    <h2 class="section-title signal-title" id="about-title">
+                        <span aria-hidden="true"></span>
+                        About
+                        <span aria-hidden="true"></span>
+                    </h2>
+
+                    <section class="about-group" aria-labelledby="education-title">
+                        <h3 class="subsection-title" id="education-title">Education</h3>
+                        <div class="education-list">
+                            <article class="education-card education-card--illinois">
+                                <div class="education-card__content">
+                                    <h4>University of Illinois Urbana-Champaign</h4>
+                                    <p>Master of Computer Science</p>
+                                    <p>2025–2026</p>
+                                </div>
+                            </article>
+
+                            <article class="education-card education-card--toronto">
+                                <div class="education-card__content">
+                                    <h4>University of Toronto</h4>
+                                    <p>Bachelor of Science in Computer Science and Statistics</p>
+                                    <p>2021–2025</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="about-group" aria-labelledby="skills-title">
+                        <h3 class="subsection-title" id="skills-title">Skills</h3>
+                        <div class="skills-grid">
+                            <article class="skill-column">
+                                <svg class="line-icon" viewBox="0 0 48 48" aria-hidden="true">
+                                    <path d="M18 11 5 24l13 13M30 11l13 13-13 13M28 5 20 43"></path>
+                                </svg>
+                                <div>
+                                    <h4>Software Development</h4>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>React</li>
+                                        <li>FastAPI</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="skill-column">
+                                <svg class="line-icon line-icon--blue" viewBox="0 0 48 48" aria-hidden="true">
+                                    <circle cx="24" cy="8" r="5"></circle>
+                                    <circle cx="10" cy="35" r="5"></circle>
+                                    <circle cx="38" cy="35" r="5"></circle>
+                                    <path d="m21 12-8 18M27 12l8 18M15 35h18"></path>
+                                </svg>
+                                <div>
+                                    <h4>Machine Learning</h4>
+                                    <ul>
+                                        <li>PyTorch</li>
+                                        <li>NumPy</li>
+                                        <li>Transformer</li>
+                                        <li>Computer Vision</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="skill-column">
+                                <svg class="line-icon" viewBox="0 0 48 48" aria-hidden="true">
+                                    <rect x="5" y="7" width="38" height="34" rx="3"></rect>
+                                    <path d="m12 17 7 7-7 7M25 31h11"></path>
+                                </svg>
+                                <div>
+                                    <h4>Programming</h4>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>C</li>
+                                        <li>R</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section class="experience stripe" id="experience" aria-labelledby="experience-title">
+                <div class="section-shell">
+                    <h2 class="section-title signal-title" id="experience-title">
+                        <span aria-hidden="true"></span>
+                        Experience
+                        <span aria-hidden="true"></span>
+                    </h2>
+
+                    <div class="experience-grid">
+                        <article class="experience-card">
+                            <svg class="experience-card__icon" viewBox="0 0 64 64" aria-hidden="true">
+                                <path d="M32 15v-6M25 8h14M16 29v-5a7 7 0 0 1 7-7h18a7 7 0 0 1 7 7v5M12 31h40v24H12z"></path>
+                                <circle cx="23" cy="41" r="4"></circle>
+                                <circle cx="41" cy="41" r="4"></circle>
+                            </svg>
+                            <div class="experience-card__body">
+                                <h3>Algorithm Engineer</h3>
+                                <p class="experience-card__company">Zorix</p>
+                                <p>Building perception, facial-animation, and motion systems for expressive companion robots.</p>
+                            </div>
+                            <button class="text-button" type="button" data-onclick="open-experience" data-experience="zorix">
+                                Learn more
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+                            </button>
+                        </article>
+
+                        <article class="experience-card">
+                            <svg class="experience-card__icon experience-card__icon--blue" viewBox="0 0 64 64" aria-hidden="true">
+                                <circle cx="32" cy="22" r="8"></circle>
+                                <circle cx="15" cy="41" r="6"></circle>
+                                <circle cx="49" cy="41" r="6"></circle>
+                                <path d="M27 28 19 36M37 28l8 8M21 44h22M32 30v14"></path>
+                            </svg>
+                            <div class="experience-card__body">
+                                <h3>Software Developer</h3>
+                                <p class="experience-card__company">Knowlecy</p>
+                                <p>Shipping researcher discovery and social networking workflows for an AI research platform.</p>
+                            </div>
+                            <button class="text-button text-button--blue" type="button" data-onclick="open-experience" data-experience="knowlecy">
+                                Learn more
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+                            </button>
+                        </article>
+
+                        <article class="experience-card">
+                            <svg class="experience-card__icon" viewBox="0 0 64 64" aria-hidden="true">
+                                <path d="M14 14h36v36H14zM22 24h20M22 32h12M22 40h16"></path>
+                                <circle cx="45" cy="41" r="5"></circle>
+                            </svg>
+                            <div class="experience-card__body">
+                                <h3>Software Developer</h3>
+                                <p class="experience-card__company">Prelude</p>
+                                <p>Developing RAG-powered CRM intelligence for cross-border B2B sales teams.</p>
+                            </div>
+                            <button class="text-button" type="button" data-onclick="open-experience" data-experience="prelude">
+                                Learn more
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+                            </button>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <dialog class="experience-dialog" id="experience-dialog" aria-labelledby="dialog-title">
+                <div class="dialog-header">
+                    <div>
+                        <p class="dialog-company" id="dialog-company"></p>
+                        <h2 id="dialog-title"></h2>
+                    </div>
+                    <button class="icon-button" type="button" data-onclick="close-dialog" aria-label="Close experience details">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"></path></svg>
+                    </button>
+                </div>
+                <ul class="dialog-details" id="dialog-details"></ul>
+            </dialog>
+
+            <section class="projects stripe" id="projects" aria-labelledby="projects-title">
+                <div class="section-shell">
+                    <h2 class="section-title signal-title" id="projects-title">
+                        <span aria-hidden="true"></span>
+                        Projects
+                        <span aria-hidden="true"></span>
+                    </h2>
+
+                    <div class="carousel" aria-roledescription="carousel" aria-label="Selected projects" tabindex="0">
+                        <button class="carousel-arrow carousel-arrow--previous" type="button" aria-label="Show previous project" data-onclick="previous-project">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"></path></svg>
+                        </button>
+
+                        <div class="carousel-viewport">
+                            <div class="carousel-track" data-carousel-track>
+                                <article class="project-slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                                    <div class="project-slide__copy">
+                                        <h3>Image Classification and Generation</h3>
+                                        <p>Trained 6 CNN models to classify 40,250 handwritten circle images from 51 writers and 8 pens. Implemented class-conditioned diffusion models to generate synthetic images.</p>
+                                        <ul class="tech-list" aria-label="Technologies used">
+                                            <li>PyTorch</li>
+                                            <li>CNN</li>
+                                            <li>Transformer</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-visual project-visual--classification" aria-hidden="true">
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </article>
+
+                                <article class="project-slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true">
+                                    <div class="project-slide__copy">
+                                        <h3>Detection and Fix of Flaky Tests</h3>
+                                        <p>Systematically detected, reproduced, analyzed, and fixed non-deterministic Java test failures across large open-source systems to improve test determinism, reliability, and CI stability.</p>
+                                        <ul class="tech-list" aria-label="Technologies used">
+                                            <li>Java</li>
+                                            <li>Git</li>
+                                            <li>NonDex</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-visual project-visual--testing" aria-hidden="true">
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </article>
+
+                                <article class="project-slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true">
+                                    <div class="project-slide__copy">
+                                        <h3>Prediction on Diagnosis of Alzheimer’s Disease</h3>
+                                        <p>Built and compared the prediction performance of SVM, Decision Trees, and Gradient Boosting. Identified 5 key predictors of Alzheimer’s diagnosis, aligning with literature and showcasing machine learning’s potential in healthcare.</p>
+                                        <ul class="tech-list" aria-label="Technologies used">
+                                            <li>R</li>
+                                            <li>ML</li>
+                                            <li>Data Analysis</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-visual project-visual--health" aria-hidden="true">
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Show next project" data-onclick="next-project">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+                        </button>
+
+                        <div class="carousel-footer">
+                            <div class="carousel-dots" aria-label="Choose a project slide">
+                                <button class="carousel-dot is-active" type="button" aria-label="Show project 1" aria-current="true" data-onclick="show-project" data-carousel-dot="0"></button>
+                                <button class="carousel-dot" type="button" aria-label="Show project 2" data-onclick="show-project" data-carousel-dot="1"></button>
+                                <button class="carousel-dot" type="button" aria-label="Show project 3" data-onclick="show-project" data-carousel-dot="2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video-section stripe" id="video" aria-labelledby="video-title">
+                <div class="section-shell">
+                    <h2 class="section-title section-title--left" id="video-title">Video</h2>
+                    <div class="video-frame">
+                        <video controls preload="metadata" poster="assets/mp1-video-poster.jpg">
+                            <source src="assets/mp1.mp4" type="video/mp4">
+                            Your browser does not support the HTML5 video element.
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact stripe" id="contact" aria-labelledby="contact-title">
+                <div class="section-shell contact__content">
+                    <h2 class="section-title section-title--left" id="contact-title">Contact</h2>
+                    <div class="contact-links" aria-label="Contact links">
+                        <a
+                            class="contact-link"
+                            href="mailto:yakunw2@illinois.edu"
+                            aria-label="Email Yakun Wang"
+                            data-tooltip="Email"
+                        >
+                            <span class="social-icon social-icon--email" aria-hidden="true"></span>
+                        </a>
+                        <a
+                            class="contact-link"
+                            href="https://github.com/Wang-Benjamin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit Yakun Wang’s GitHub profile"
+                            data-tooltip="GitHub"
+                        >
+                            <span class="social-icon social-icon--github" aria-hidden="true"></span>
+                        </a>
+                        <a
+                            class="contact-link"
+                            href="https://www.linkedin.com/in/yakun-wang-701a67294/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit Yakun Wang’s LinkedIn profile"
+                            data-tooltip="LinkedIn"
+                        >
+                            <span class="social-icon social-icon--linkedin" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Yakun Wang</p>
+        </footer>
     </body>
 </html>
